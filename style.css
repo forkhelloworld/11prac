@@ -1,0 +1,305 @@
+body {
+  padding: 0 11%;
+}
+
+body * {
+  color: black;
+  font-family: "Inter", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+.head-header {
+  display: flex;
+  justify-content: space-between;
+  text-wrap: nowrap;
+  align-items: center;
+  padding: 2rem 0;
+  font-weight: 300;
+  gap: 2em;
+}
+
+.logo {
+  font-family: "Josefin Sans";
+  color: #1d2830;
+  font-size: 24px;
+}
+
+.violet-point {
+  color: #794cff;
+}
+
+.header-nav {
+  display: flex;
+  gap: 3em;
+}
+
+.head-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.free-start {
+  color: #794cff;
+  background-color: #ece5ff;
+  padding: 0.7em 1em;
+  margin-left: 0.5em;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.menu-burger {
+  font-size: 8px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: none;
+}
+
+.menu-burger span {
+  width: 24px;
+  height: 2px;
+  background-color: #1d2830;
+  border-radius: 1px;
+}
+
+.overview-section {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-section header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sale {
+  color: #ece5ff;
+  background-color: #81c43b;
+  border-radius: 1rem;
+  padding: 5px 10px;
+}
+
+.overview-title {
+  color: #35414b;
+  text-align: center;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  padding: 0 2%;
+  margin: 2rem 0;
+}
+
+.overview-section > p {
+  text-align: center;
+  color: #4e5a65;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 25%;
+}
+
+input[type="email"] {
+  padding: 0.8rem;
+  border: 1px solid #e1e5ea;
+  border-radius: 4px;
+}
+
+.try-button {
+  padding: 0.8rem 2rem;
+  background-color: #794cff;
+  border: none;
+  color: white;
+  border-radius: 0 4px 4px 0;
+}
+
+.send-email {
+  margin: 1rem 0;
+}
+
+.overview-img {
+  width: 100%;
+}
+
+.overview-section footer {
+  width: 100%;
+  text-align: center;
+}
+
+.most-important-paragraph {
+  color: #4e5a65;
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-section {
+  display: flex;
+}
+
+.timeline-section img {
+  width: 65%;
+  height: 80vh;
+}
+
+.capability-list {
+  margin-left: 2rem;
+}
+
+.capability-list li {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.capability-list li:hover {
+  background-color: #f6f3fc;
+  border-left: #794cff solid 8px;
+}
+
+h2 {
+  color: #35414b;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  color: #4e5a65;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.workeasier-section {
+  text-align: center;
+}
+
+.workeasier-section h1 {
+  margin-top: 2rem;
+  color: #35414b;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.workeasier-section h2 {
+  color: #35414b;
+}
+
+.benefits-list {
+  text-align: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.benefit {
+  margin: 2rem;
+}
+
+.benefit i {
+  margin: 1rem 0;
+  color: #ff9800;
+  background-color: #fef6ee;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 910px) {
+  body {
+    padding: 0 2em;
+  }
+  .header-nav {
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .logo {
+    font-size: 20px;
+  }
+  .head-header {
+    gap: 0;
+  }
+  .header-nav,
+  .head-link {
+    display: none;
+  }
+
+  .menu-burger {
+    display: flex;
+  }
+
+  .sale {
+    display: none;
+  }
+
+  .overview-title {
+    font-size: 32px;
+    line-height: 40px;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .overview-section > p {
+    padding: 0;
+  }
+
+  .try-button {
+    border-radius: 4px;
+  }
+
+  .send-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .timeline-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timeline-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .capability-list li:hover {
+    background-color: #f6f3fc;
+    border: none;
+    border-bottom: #794cff solid 8px;
+  }
+  .workeasier-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .benefits-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .benefit:nth-child(1n + 4) {
+    display: none;
+  }
+
+  .benefits-list::after {
+    text-align: center;
+    content: "View more benefits";
+    color: #794cff;
+    background-color: #ece5ff;
+    padding: 1rem 0;
+    border-radius: 4px;
+  }
+}
